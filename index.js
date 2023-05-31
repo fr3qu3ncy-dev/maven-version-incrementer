@@ -14,7 +14,7 @@ try {
         oldNumber = 0;
     }
 
-    console.log(`Latest version: ${latestRelease}`);
+    console.log(`Old number: ${oldNumber}`)
 
     // Increment oldNumber
     const newNumber = oldNumber + 1;
