@@ -11,7 +11,7 @@ try {
     // Get number after last "-" in latestRelease and parse it to int
     const oldNumber = parseInt(latestRelease.substring(latestRelease.lastIndexOf("-") + 1));
 
-    console.log(`Latest version: ${latestVersion}`);
+    console.log(`Latest version: ${latestRelease}`);
 
     // Increment oldNumber
     const newNumber = oldNumber + 1;
