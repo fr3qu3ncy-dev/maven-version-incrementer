@@ -2,8 +2,8 @@
 
 set -e
 
-actual_version=${ACTUAL_VERSION}
-release=${LATEST_RELEASE}
+actual_version=${INPUT_ACTUAL_VERSION}
+release=${INPUT_LATEST_RELEASE}
 
 echo "Actual version: ${actual_version}"
 echo "Latest release: ${release}"
