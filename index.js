@@ -22,7 +22,9 @@ try {
     const newVersion = actualVersion + "-beta-" + newNumber;
 
     // Set new version in pom.xml
-    execSync('mvn versions:set -DnewVersion=${newVersion} -DgenerateBackupPoms=false');
+    const output = execSync('mvn versions:set -DnewVersion=${newVersion} -DgenerateBackupPoms=false');
+
+    console.log(output.toString());
 
     core.setOutput("new_version", newVersion);
 
