@@ -12,8 +12,5 @@ outputs:
   new_version:
     description: 'The new version of the project'
 runs:
-  using: 'docker'
-  image: 'Dockerfile'
-  args:
-    - ${{ inputs.latest_release }}
-    - ${{ inputs.actual_version }}
+  using: 'node16'
+  main: 'index.js'
