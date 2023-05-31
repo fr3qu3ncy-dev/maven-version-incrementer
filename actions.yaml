@@ -1,5 +1,6 @@
 name: 'Maven Version Incrementer'
 description: 'Increments the version of a Maven project'
+version: '1.0.0'
 inputs:
   latest_release:
     description: 'The latest version of the project'
