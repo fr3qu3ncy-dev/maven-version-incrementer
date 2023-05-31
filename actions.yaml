@@ -1,0 +1,17 @@
+name: 'Maven Version Incrementer'
+description: 'Increments the version of a Maven project'
+inputs:
+  latest_release:
+    description: 'The latest version of the project'
+    required: true
+  actual_version:
+    description: 'The actual version of the project'
+    required: true
+outputs:
+  new_version:
+    description: 'The new version of the project'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.latest_version }}
