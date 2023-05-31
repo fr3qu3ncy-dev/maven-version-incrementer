@@ -9,7 +9,10 @@ try {
     console.log(`Latest release: ${latestRelease}`);
 
     // Get number after last "-" in latestRelease and parse it to int
-    const oldNumber = parseInt(latestRelease.substring(latestRelease.lastIndexOf("-") + 1));
+    let oldNumber = parseInt(latestRelease.substring(latestRelease.lastIndexOf("-") + 1));
+    if (isNaN(oldNumber)) {
+        oldNumber = 0;
+    }
 
     console.log(`Latest version: ${latestRelease}`);
 
