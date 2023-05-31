@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM maven:3.8.3-openjdk-17
 
 COPY increment_script.sh /increment_script.sh
 
